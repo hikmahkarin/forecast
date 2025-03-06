@@ -38,12 +38,6 @@ def app():
         st.error("⚠️ Kolom 'Close' tidak ditemukan dalam dataset. Pastikan dataset memiliki kolom tersebut.")
         return
 
-    # st.subheader("📊 Imputasi Missing Values")
-    # numeric_cols = data.select_dtypes(include=[np.number]).columns
-    # imputer = SimpleImputer(strategy='mean')
-    # data[numeric_cols] = imputer.fit_transform(data[numeric_cols])
-    # st.dataframe(data.head())
-
     closing_prices = data['Close'].values
 
     st.subheader("📈 Transformasi ke Supervised Learning Format")
