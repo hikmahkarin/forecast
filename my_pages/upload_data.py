@@ -25,11 +25,11 @@ def app():
         st.markdown("---")
 
         # Menampilkan informasi data seperti df.info()
-        st.subheader("📊 Informasi Data")
-        buffer = io.StringIO()
-        df.info(buf=buffer)
-        info_str = buffer.getvalue()
-        st.code(info_str, language="python")
+        # st.subheader("📊 Informasi Data")
+        # buffer = io.StringIO()
+        # df.info(buf=buffer)
+        # info_str = buffer.getvalue()
+        # st.code(info_str, language="python")
 
         st.markdown("---")
 
